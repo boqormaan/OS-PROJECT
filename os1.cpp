@@ -19,7 +19,7 @@ int main()
 		for(h=0;h<m;h++)
 		need[i][h]=max[i][h]-alloc[i][h];
 	}
-	int y=0;
+	int z=0;
 	for(g=0;g<5;g++)
 	{
 		for(i=0;i<n;i++)
@@ -35,9 +35,17 @@ int main()
 						break;
 					}
 				}
+				if(flag==0)
+				{
+					ans[in++]=i;
+					for(z=0;z<m;z++)
+					avail[z]+=alloc[i][y];
+					f[i]=1;
+				}
 			}
 			
 		}
 	}
+	
 }
 
