@@ -13,4 +13,31 @@ int main()
 	{
 		f[g]=0;
 	}
+	int need[n][m];
+	for(i=0;i<n;i++)
+	{
+		for(h=0;h<m;h++)
+		need[i][h]=max[i][h]-alloc[i][h];
+	}
+	int y=0;
+	for(g=0;g<5;g++)
+	{
+		for(i=0;i<n;i++)
+		{
+			if(f[i]==0)
+			{
+				int flag=0;
+				for(h=0;h<m;h++)
+				{
+					if(need[i][j]>avail[j])
+					{
+						flag=1;
+						break;
+					}
+				}
+			}
+			
+		}
+	}
 }
+
